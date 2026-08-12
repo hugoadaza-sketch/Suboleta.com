@@ -1,0 +1,181 @@
+:root{
+
+    --primary:#FF6A00;
+    --primary-light:#ff8c3a;
+
+    --dark:#050505;
+
+    --white:#ffffff;
+
+    --gray:#bdbdbd;
+
+}
+
+
+
+/* RESET GENERAL */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    background:var(--dark);
+
+    color:var(--white);
+
+    font-family:
+
+    'Inter',
+    'Segoe UI',
+    Arial,
+    sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* CONTENEDOR GLOBAL */
+
+.container{
+
+    width:90%;
+
+    max-width:1280px;
+
+    margin:auto;
+
+}
+
+
+
+/* LINKS */
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+
+/* BOTONES */
+
+button{
+
+    font-family:inherit;
+
+}
+
+
+
+/* IMAGENES */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+/* SELECCION DE TEXTO */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+/* SCROLLBAR PERSONALIZADO */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#050505;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-light);
+
+}
+
+
+
+/* TITULOS GLOBALES */
+
+h1,
+h2,
+h3,
+h4{
+
+    letter-spacing:-.5px;
+
+}
+
+
+
+/* ESPACIADO PARA ANCLAS */
+
+section{
+
+    scroll-margin-top:100px;
+
+}
+
+
+
+/* RESPONSIVE GLOBAL */
+
+@media(max-width:768px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+}

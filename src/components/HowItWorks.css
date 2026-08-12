@@ -1,0 +1,279 @@
+.how-it-works {
+
+    padding:100px 0;
+
+    background:#050505;
+
+    color:white;
+
+}
+
+
+
+.how-it-works .container {
+
+    width:90%;
+
+    max-width:1280px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+/* Header */
+
+.how-header {
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.how-header h2 {
+
+    font-size:42px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.how-header p {
+
+    color:#ccc;
+
+    font-size:20px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* Pasos */
+
+.steps {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    position:relative;
+
+}
+
+
+
+
+
+/* Línea decorativa */
+
+.steps::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:90px;
+
+    left:15%;
+
+    right:15%;
+
+    height:1px;
+
+    background:rgba(255,106,0,.35);
+
+    z-index:0;
+
+}
+
+
+
+
+
+.step {
+
+    position:relative;
+
+    z-index:1;
+
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(255,255,255,.08),
+
+        rgba(255,255,255,.03)
+
+    );
+
+
+    border:1px solid rgba(255,106,0,.25);
+
+
+    border-radius:28px;
+
+
+    padding:40px 30px;
+
+
+    text-align:center;
+
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+
+    transition:.35s ease;
+
+}
+
+
+
+
+
+.step:hover {
+
+    border-color:#FF6A00;
+
+
+    box-shadow:
+
+    0 25px 60px rgba(255,106,0,.25);
+
+}
+
+
+
+
+
+/* Número */
+
+.step-number {
+
+    position:absolute;
+
+
+    top:20px;
+
+    right:25px;
+
+
+    font-size:45px;
+
+    font-weight:900;
+
+
+    color:rgba(255,255,255,.08);
+
+}
+
+
+
+
+
+/* Icono */
+
+.step-icon {
+
+    width:90px;
+
+    height:90px;
+
+
+    margin:0 auto 25px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    border-radius:25px;
+
+
+    background:rgba(255,106,0,.12);
+
+
+    font-size:55px;
+
+}
+
+
+
+
+
+.step h3 {
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.step p {
+
+    color:#ccc;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* Tablet */
+
+@media(max-width:900px){
+
+
+    .steps {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .steps::before {
+
+        display:none;
+
+    }
+
+
+
+    .how-header h2 {
+
+        font-size:34px;
+
+    }
+
+
+}

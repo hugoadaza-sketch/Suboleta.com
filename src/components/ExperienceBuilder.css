@@ -1,0 +1,377 @@
+.experience-builder {
+
+    padding:120px 0;
+
+    background:#050505;
+
+    color:white;
+
+    scroll-margin-top:100px;
+
+}
+
+
+
+.experience-builder .container {
+
+    width:90%;
+
+    max-width:1280px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+/* Header */
+
+.experience-header {
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.experience-header h2 {
+
+    font-size:46px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.experience-header p {
+
+    color:#ccc;
+
+    font-size:20px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* Grid */
+
+.experience-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+/* Cards */
+
+.experience-card {
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(255,255,255,.08),
+
+        rgba(255,255,255,.03)
+
+    );
+
+
+    border:1px solid rgba(255,255,255,.12);
+
+
+    border-radius:28px;
+
+
+    padding:35px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+
+    backdrop-filter:blur(15px);
+
+
+    -webkit-backdrop-filter:blur(15px);
+
+
+    transition:.35s ease;
+
+}
+
+
+
+
+
+.experience-card:hover {
+
+    border-color:#FF6A00;
+
+
+    box-shadow:
+
+    0 25px 60px rgba(255,106,0,.25);
+
+}
+
+
+
+
+
+/* Icono */
+
+.experience-icon {
+
+    width:75px;
+
+    height:75px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:
+
+    rgba(255,106,0,.12);
+
+
+    border-radius:22px;
+
+
+    font-size:42px;
+
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+.experience-card h3 {
+
+    color:white;
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.experience-card p {
+
+    color:#ccc;
+
+    line-height:1.6;
+
+    flex:1;
+
+}
+
+
+
+
+
+/* Botón */
+
+.experience-card a {
+
+    margin-top:25px;
+
+
+    background:#FF6A00;
+
+
+    color:white;
+
+
+    padding:14px;
+
+
+    border-radius:50px;
+
+
+    text-align:center;
+
+
+    font-weight:700;
+
+
+    text-decoration:none;
+
+
+    transition:.35s ease;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(255,106,0,.25);
+
+}
+
+
+
+.experience-card a:hover {
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+    0 15px 35px rgba(255,106,0,.45);
+
+}
+
+
+
+
+
+/* Experiencia destacada */
+
+.featured {
+
+    border:1px solid #FF6A00;
+
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(255,106,0,.20),
+
+        rgba(20,20,20,.9)
+
+    );
+
+
+    transform:scale(1.04);
+
+
+    position:relative;
+
+}
+
+
+
+.featured::before {
+
+    content:"⭐ Más recomendado";
+
+
+    position:absolute;
+
+
+    top:-14px;
+
+
+    left:50%;
+
+
+    transform:translateX(-50%);
+
+
+    background:#FF6A00;
+
+
+    color:white;
+
+
+    padding:6px 18px;
+
+
+    border-radius:50px;
+
+
+    font-size:13px;
+
+
+    font-weight:700;
+
+}
+
+
+
+
+
+.featured:hover {
+
+    transform:scale(1.06) translateY(-12px);
+
+}
+
+
+
+
+
+/* Tablet */
+
+@media(max-width:1100px){
+
+
+    .experience-grid {
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+
+/* Móvil */
+
+@media(max-width:600px){
+
+
+    .experience-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .experience-header h2 {
+
+        font-size:34px;
+
+    }
+
+
+}

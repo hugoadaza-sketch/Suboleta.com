@@ -1,0 +1,545 @@
+.events{
+
+    padding:100px 0;
+
+    background:#050505;
+
+    color:white;
+
+}
+
+
+
+.events .container{
+
+    width:90%;
+
+    max-width:1280px;
+
+    margin:auto;
+
+}
+
+
+
+.events h2{
+
+    text-align:center;
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+    font-weight:800;
+
+}
+
+
+
+.events-subtitle{
+
+    text-align:center;
+
+    color:#bdbdbd;
+
+    font-size:20px;
+
+    margin-bottom:60px;
+
+}
+
+
+
+
+
+.event-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+
+.event-card{
+
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(255,255,255,.08),
+
+        rgba(255,255,255,.03)
+
+    );
+
+
+    border:1px solid rgba(255,255,255,.12);
+
+
+    border-radius:28px;
+
+
+    overflow:hidden;
+
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+.event-card:hover{
+
+
+    transform:translateY(-12px);
+
+
+    border-color:#FF6A00;
+
+
+    box-shadow:
+
+    0 25px 60px rgba(255,106,0,.25);
+
+
+}
+
+
+
+
+
+
+/* IMAGEN DEL EVENTO */
+
+
+.event-image{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.event-image img{
+
+
+    width:100%;
+
+
+    height:280px;
+
+
+    object-fit:cover;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+
+.event-card:hover .event-image img{
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+/* CATEGORIA */
+
+
+.event-status{
+
+
+    position:absolute;
+
+
+    top:20px;
+
+
+    left:20px;
+
+
+    background:#FF6A00;
+
+
+    color:white;
+
+
+    padding:8px 16px;
+
+
+    border-radius:999px;
+
+
+    font-size:13px;
+
+
+    font-weight:700;
+
+
+    z-index:2;
+
+
+}
+
+
+
+
+
+/* EVENTO DESTACADO */
+
+
+.featured-tag{
+
+
+    position:absolute;
+
+
+    bottom:20px;
+
+
+    right:20px;
+
+
+    background:#FF6A00;
+
+
+    color:white;
+
+
+    padding:8px 16px;
+
+
+    border-radius:999px;
+
+
+    font-size:13px;
+
+
+    font-weight:700;
+
+
+    z-index:2;
+
+
+}
+
+
+
+
+
+
+/* CONTENIDO */
+
+
+.event-content{
+
+
+    padding:30px;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+
+
+.event-content h3{
+
+
+    font-size:26px;
+
+
+    margin-bottom:20px;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.event-content p{
+
+
+    color:#cfcfcf;
+
+
+    margin-bottom:10px;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+
+
+.event-content strong{
+
+
+    color:#FF6A00;
+
+
+    font-size:24px;
+
+
+    margin-top:20px;
+
+
+}
+
+
+
+
+
+/* BOTON */
+
+
+.event-content a{
+
+
+    margin-top:25px;
+
+
+    background:#FF6A00;
+
+
+    color:white;
+
+
+    padding:15px 25px;
+
+
+    border-radius:999px;
+
+
+    text-decoration:none;
+
+
+    text-align:center;
+
+
+    font-weight:700;
+
+
+    transition:.35s;
+
+
+    box-shadow:
+
+
+    0 10px 30px rgba(255,106,0,.30);
+
+
+}
+
+
+
+
+
+.event-content a:hover{
+
+
+    transform:translateY(-4px);
+
+
+    box-shadow:
+
+
+    0 15px 40px rgba(255,106,0,.50);
+
+
+}
+
+
+
+
+
+
+/* TABLET */
+
+
+@media(max-width:1000px){
+
+
+    .event-grid{
+
+
+        grid-template-columns:repeat(2,1fr);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+/* MOVIL */
+
+
+@media(max-width:600px){
+
+
+    .events{
+
+
+        padding:80px 0;
+
+
+    }
+
+
+
+    .events h2{
+
+
+        font-size:36px;
+
+
+    }
+
+
+
+
+    .events-subtitle{
+
+
+        font-size:17px;
+
+
+        margin-bottom:40px;
+
+
+    }
+
+
+
+
+    .event-grid{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+    .event-image img{
+
+
+        height:230px;
+
+
+    }
+
+
+
+}
+/* =========================
+   SIN RESULTADOS
+========================= */
+
+.no-results {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 40px auto 0;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.08),
+            rgba(255,255,255,.03)
+        );
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 28px;
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+}
+
+
+.no-results-icon {
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.no-results h3 {
+
+    color: white;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.no-results p {
+
+    color: #bdbdbd;
+
+    line-height: 1.7;
+
+    font-size: 17px;
+
+}

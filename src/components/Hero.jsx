@@ -188,7 +188,7 @@ function Hero() {
 
 
           <a
-            href="#evento"
+            href="#eventos"
             className="primary"
           >
 
